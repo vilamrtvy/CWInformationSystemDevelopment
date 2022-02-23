@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Airborne', sans-serif;
+}
+
+.container{
+    background: url(/static/image/fon1.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 30px;
+}
+
+/*
+
+НАВБАР
+
+*/
+
+.logo{
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    top: 50%;
+    position: relative;
+    margin-top: -0.5em;
+    margin-left: 4%;
+    font-family: 'Airborne', sans-serif;
+}
+
+.navbar{
+    height: 8vh;
+    align-items: centre;
+    background: rgba(165, 166, 168, 0.9);
+    padding-right: 4%;
+    display: flex;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    font-size: 20px;
+    top: 50%;
+    position: relative;
+    margin-top: -0.5em;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(51, 32, 14, 0.6);
+}
+
+.button-7 {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.button-7 span {
+    display: block;
+    overflow: hidden;
+    max-width: 0;
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    line-height: 1;
+    transition: 2s ease;
+    transition-delay: 0.5s;
+    font-family: 'Airborne', sans-serif;
+}
+
+.button-7:after {
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.button-7:hover span {
+    max-width: 280px;
+    opacity: 1;
+    margin-right: 6px;
+}
+
+
+/*
+
+ПРОФИЛЬ
+
+*/
+
+.profile {
+    height: 68%;
+    position: relative;
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+}
+
+
+/*
+
+ПРОФИЛЬ
+
+*/
+
+
+table {
+    font-size: 14px;
+    border: 1px solid rgba(165, 166, 168);
+    color: #33200e;
+    border-spacing: 15px;
+    border-collapse: separate;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 15px;
+    cursor: default;
+    background: rgba(165, 166, 168, 0.6);
+}
+
+th {
+    font-weight: normal;
+    color: rgba(51,32,14, 0.5);
+    font-weight: 550;
+    border-bottom: 2px solid rgba(165, 166, 168, 0.6);
+    padding: 10px 8px;
+}
+
+td {
+    border-bottom: 1px solid #ccc;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 9px 8px;
+    transition: .3s linear;
+    cursor: default;
+    height: 40px;
+    font-weight: 520;
+}
+
+caption {
+    caption-side: top;
+    position: relative;
+    color: rgba(51, 32, 14, 0.6);
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+/*
+
+ONE LINE
+
+*/
+
+.oneline {
+    font-size: 14px;
+    margin-top: 18px;
+    border: 1px solid rgba(165, 166, 168);
+    border-radius: 20px;
+    color: #33200e;
+    text-align: center;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 10px;
+    cursor: default;
+    background: rgba(165, 166, 168, 0.6);
+}
+
+.oneline th {
+    font-weight: normal;
+    width: 450px;
+    color: rgba(51,32,14, 0.5);
+    font-weight: 550;
+    border-bottom: none;
+    padding: 1px 8px;
+}
+
+.oneline caption{
+    margin-bottom: 8px;
+    padding: 0px 0px;
+}
+
+
+/*
+
+КНОПКИ
+
+*/
+
+
+button {
+    color: rgba(51, 32, 14, 0.6);
+    font-weight: 520;
+    font-size: 16px;
+    border-radius: 5px;
+    background: rgba(165, 166, 168, 0.4);
+    height: 65px;
+    width: 750px;
+    cursor: pointer;
+    display: block;
+    transition: 1s;
+}
+
+button a, a:visited{
+    text-decoration: none;
+    color: rgba(51, 32, 14, 0.6);
+    transition: 1.5s;
+}
+
+button:hover {
+    background: rgba(255, 231, 240, 0.2);
+    transition: 1.5s;
+}

@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Airborne', sans-serif;
+}
+
+.container{
+    background: url(/static/image/fon1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 30px;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+/*
+
+НАВБАР
+
+*/
+
+
+.logo{
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    top: 50%;
+    position: relative;
+    margin-top: -0.5em;
+    margin-left: 4%;
+}
+
+.navbar{
+    height: 8vh;
+    align-items: centre;
+    background: rgba(165, 166, 168, 0.9);
+    padding-right: 4%;
+    display: flex;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    font-size: 20px;
+    top: 50%;
+    position: relative;
+    margin-top: -0.5em;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(51, 32, 14, 0.6);
+}
+
+.button-7 {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.button-7 span {
+    display: block;
+    overflow: hidden;
+    max-width: 0;
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    line-height: 1;
+    transition: 3s ease;
+    transition-delay: 0.5s;
+}
+
+.button-7:after {
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.button-7:hover span {
+    max-width: 280px;
+    opacity: 1;
+    margin-right: 6px;
+    transition: 3s;
+}
+
+/*
+
+ПРОФИЛЬ
+
+*/
+
+.profile {
+    height: 32%;
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+}
+
+
+/*
+
+ЛЕВЫЙ БЛОК
+
+*/
+
+
+
+.area1 {
+    width: 25%;
+    height: 250px;
+}
+
+.image {
+    width: 28vh;
+    height: 28vh;
+    border-radius: 240px;
+    border: 2px solid rgba(165, 166, 168, 0.6);
+    box-shadow: 0 0 5px #666;
+    left: 55%;
+    margin-left: -110px;
+    background-image: url(/static/image/patient.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: relative;
+}
+
+
+/*
+
+ЦЕНТРАЛЬНЫЙ БЛОК
+
+*/
+
+
+.area2 {
+    height: 250px;
+    width: 55%;
+}
+
+
+caption {
+    caption-side: top;
+    position: relative;
+    color: rgba(51, 32, 14, 0.8);
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+}
+
+table {
+    font-size: 14px;
+    border: none;
+    border-spacing: 30px 0px;
+    border-collapse: separate;
+    text-align: center;
+    position: relative;
+    cursor: default;
+    background: none;
+}
+
+th {
+    font-weight: normal;
+    color: rgba(51, 32, 14, 0.8);
+    border-bottom: 2px solid rgba(165, 166, 168, 0.6);
+    font-weight: 600;
+}
+
+td {
+    border-bottom: 2px solid rgba(165, 166, 168, 0.6);
+    color: rgba(51, 32, 14, 0.8);
+    padding: 7px 0px;
+    transition: .3s linear;
+    cursor: default;
+    height: 20px;
+    font-weight: 505;
+}
+
+.area2 table {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 98%;
+}
+
+.area2 th {
+    width: 31%;
+}
+
+.area2 td {
+    width: 45%;
+}
+
+input[type="text"] {
+   display: block;
+   height: 30px;
+   width: 95%;
+   margin-left: 0px;
+   padding-left: 10px;
+   padding-right: 10px;
+   margin-right: 0px;
+   border-width: 0;
+   border-radius: 10px;
+   color: rgba(51, 32, 14, 0.6);
+   border: 2px solid white;
+   background: rgba(255, 255, 255, .8);
+   font-size: 14px;
+   position: relative;
+}
+
+input::placeholder {
+    font-size: 10px;
+}
+
+.edit {
+    border-bottom: none;
+}
+
+.accept {
+    width: 30px;
+    border-bottom: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+
+/*
+
+ПРАВЫЙ БЛОК
+
+*/
+
+
+.area3 {
+    height: 250px;
+    width: 23%;
+}
+
+.location1 {
+    position: relative;
+    top: 30%;
+    margin-left: 20px;
+}
+
+.location2 {
+    position: relative;
+    top: 35%;
+    margin-left: 20px;
+}
+
+.location3 {
+    position: relative;
+    top: 41%;
+    margin-left: 20px;
+}
+
+.button-main {
+    position: relative;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: rgba(51, 32, 14, 0.6);
+    display: inline-block;
+}
+
+.button-main a, a:visited {
+    text-decoration: none;
+    color: rgba(51, 32, 14, 0.6);
+}
+
+.button-main span {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    max-width: 0;
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    line-height: 1;
+    top: 10px;
+    left: 45px;
+    transition-delay: 0.5s;
+    transition: 3s;
+
+}
+
+.button-main:hover span {
+    max-width: 280px;
+    opacity: 1;
+    margin-right: 35px;
+    transition: 3s;
+}
+
+/*
+
+ИСТОРИЯ БОЛЕЗНИ
+
+*/
+
+
+.history {
+    position: absolute;
+    margin: 6% 10%;
+    width: 80%;
+    height: 50%;
+    display: block;
+}
+
+.history table {
+    left: 50%;
+    transform: translateX(-50%);
+    border-spacing: 50px 10px;
+    border-collapse: separate;
+}
+
+.history table caption {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.history table th {
+    padding-bottom: 5px;
+}
+
+.history table td {
+    border-bottom: 1px solid rgba(165, 166, 168, 0.6);
+}

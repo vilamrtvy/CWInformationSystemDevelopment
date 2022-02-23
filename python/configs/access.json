@@ -1,0 +1,171 @@
+{
+  "dc": [
+    "base_page",
+    "end_page",
+
+    "login_page",
+    "re_authentication",
+
+    "all_patients",
+    "about_patient",
+    "wanna_edit",
+    "patient_disease_edit",
+    "patient_room_edit",
+    "confirm_discharge",
+    "discharge_patient",
+    "go_home",
+
+    "check",
+    "add_or_found_patient",
+    "add_patient_info",
+    "add_accept",
+    "found_patient",
+    "founded_patients",
+    "founded_patient",
+    "choose_disease",
+    "choose_ward",
+    "info_card",
+    "edit_disease_or_ward",
+    "edit_disease",
+    "edit_ward",
+    "edit_bio",
+    "send_to_db",
+    "final_result",
+    "delete",
+    "save_cash",
+    "delete_cash",
+
+    "all_notices",
+    "notice_patient",
+    "adding_info",
+    "adding_disease",
+    "adding_ward",
+    "update_patient_history",
+
+    "session_page",
+    "basket",
+    "add_to_basket"
+  ],
+
+  "mrg": [
+    "base_page",
+    "end_page",
+
+    "login_page",
+    "re_authentication",
+
+    "profile_menu",
+    "profile_mrg_sql1",
+    "profile_mrg_sql2",
+    "profile_mrg_sql3",
+    "profile_mrg_sql4",
+
+    "all_patients",
+    "about_patient",
+    "wanna_edit",
+    "patient_disease_edit",
+    "patient_room_edit",
+    "confirm_discharge",
+    "discharge_patient",
+    "go_home",
+
+    "check",
+    "add_or_found_patient",
+    "add_patient_info",
+    "add_accept",
+    "found_patient",
+    "founded_patients",
+    "founded_patient",
+    "choose_doctors",
+    "choose_disease",
+    "choose_ward",
+    "info_card",
+    "edit_disease_or_ward",
+    "edit_disease",
+    "edit_ward",
+    "edit_bio",
+    "send_to_db",
+    "final_result",
+    "delete",
+    "save_cash",
+    "delete_cash",
+
+    "all_notices",
+    "notice_patient",
+    "adding_info",
+    "adding_disease",
+    "adding_ward",
+    "update_patient_history",
+
+    "edit_page",
+    "session_page",
+    "show_table",
+    "edit_table",
+    "basket",
+    "add_to_basket",
+    "get_name",
+    "about_patient"
+  ],
+
+  "scr": [
+    "base_page",
+    "end_page",
+
+    "login_page",
+    "re_authentication",
+
+    "profile_menu",
+    "profile_sql1",
+    "profile_sql2",
+    "profile_sql3",
+    "profile_sql4",
+    "profile_sql5",
+
+    "check",
+    "add_or_found_patient",
+    "add_patient_info",
+    "add_accept",
+    "found_patient",
+    "founded_patients",
+    "founded_patient",
+    "choose_brans",
+    "choose_doctors",
+    "info_card",
+    "edit_bio",
+    "send_to_db",
+    "final_result",
+    "delete",
+    "save_cash",
+    "delete_cash",
+
+    "edit_page",
+    "session_page",
+    "show_table",
+    "edit_table",
+    "basket",
+    "add_to_basket",
+    "get_name",
+    "about_patient"
+  ],
+
+  "mrga": [
+    "base_page",
+    "end_page",
+
+    "login_page",
+    "re_authentication",
+
+    "profile_menu",
+    "profile_sql1",
+    "profile_sql4",
+    "profile_sql5"
+  ],
+
+  "unauthorized": [
+    "base_page",
+    "end_page",
+
+    "login_page",
+    "re_authentication"
+  ]
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/patient/main.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.1/css/all.css">
+    <title>ADDING</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav>
+                <ul>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="{{ url }}">
+                        <span>НАЗАД</span>
+                        <i class="fas fa-undo"></i>
+                    </a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/patient/delete_cash">
+                        <span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span>
+                        <i class="fas fa-home"></i>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-2">
+            <form class="transparent">
+                <div class="form-inner">
+                    <h3>Добавление нового пациента</h3>
+                    <label style="padding-top: 40px;">ФИО</label>
+                    <input name="patient_name" type="text" value="{{ name }}" placeholder="{{ name }}" required>
+
+                    <label>ДАТА РОЖДЕНИЯ</label>
+                    <input name="patient_birthday" type="date" value="{{ birthday }}" placeholder="{{ birthday }}">
+
+                    <label>СЕРИЯ И НОМЕР ПАСПОРТА | В ФОРМАТЕ **** ******</label>
+                    <input name="patient_passport" type="text" pattern="[0-9]{4} [0-9]{6}" value="{{ passport }}">
+
+                    <label>АДРЕС ПРОЖИВАНИЯ / РЕГИСТРАЦИИ</label>
+                    <input name="patient_address" type="text" value="{{ address }}" placeholder="{{ address }}">
+
+                    <button class="button-search" type="submit" formmethod="POST">
+                        <span>Далее</span>
+                        <i class="far fa-chevron-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

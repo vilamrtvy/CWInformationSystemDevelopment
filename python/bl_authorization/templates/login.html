@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/auth_base.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>Autorization</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav><ul>
+                <li><a class="button-7" href="/">
+                    <span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span>
+                    <i class="fas fa-home"></i>
+                </a></li>
+            </ul></nav>
+        </div>
+
+        <form class="transparent">
+            <div class="form-inner">
+                {% for i in range(0, length) %}
+                <h3> {{ title[i] }} </h3>
+                {% endfor %}
+                <label style="padding-top: 40px;" for="username">Имя пользователя</label>
+                <input id="username" name="username" type="text" required>
+
+                <label for="password">Пароль</label>
+                <input id="password" name="password" type="password" required>
+
+                <input type="submit" formmethod="POST" value='{{ name_of_button }}'>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

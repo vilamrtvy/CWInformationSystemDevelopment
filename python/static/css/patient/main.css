@@ -1,0 +1,406 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Airborne', sans-serif;
+}
+
+.container{
+    background: url(/static/image/fon1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    padding-bottom: 30px;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+
+/*
+
+NAVBAR
+
+*/
+
+
+.logo{
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    top: 50%;
+    position: relative;
+    margin-top: -0.5em;
+    margin-left: 4%;
+    font-family: 'Airborne', sans-serif;
+}
+
+.navbar{
+    height: 8vh;
+    align-items: centre;
+    background: rgba(165, 166, 168, 0.9);
+    padding-right: 4%;
+    display: flex;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    font-size: 20px;
+    top: 50%;
+    position: relative;
+    margin-top: -0.5em;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(221, 221, 222);
+}
+
+.button-7 {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 50px;
+}
+
+.button-7 span {
+    display: block;
+    overflow: hidden;
+    max-width: 0;
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    line-height: 1;
+    transition: 1s;
+    font-family: 'Airborne', sans-serif;
+}
+
+.button-7:after {
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.button-7:hover span {
+    max-width: 280px;
+    opacity: 1;
+    margin-right: 6px;
+}
+
+
+.image {
+    width: 250px;
+    height: 250px;
+    border-radius: 240px;
+    border: 2px solid rgba(165, 166, 168, 0.6);
+    box-shadow: 0 0 5px #666;
+    margin: 30px;
+    left: 50%;
+    margin-left: -125px;
+    background-image: url(/static/image/doctor.png);
+    background-size: cover;
+    background-position: center;
+    display: block;
+    position: relative;
+}
+
+
+/*
+
+СONTAINER-2
+
+*/
+
+
+.container-2 {
+    width: 100%;
+    position: relative;
+}
+
+
+/*
+
+TRANSPARENT
+
+*/
+
+
+.transparent {
+    width: 40%;
+    padding: 40px 60px;
+    box-shadow: 4px 4px 18px 23px rgba(165, 166, 168, 0.3);
+    border-radius: 10px;
+    background: rgba(165, 166, 168, 0.3);
+    background-size: cover;
+    position: relative;
+    left: 50%;
+    transform: translateX(-60%);
+    margin: 5%;
+}
+
+.form-inner {
+    position: relative;
+}
+
+.form-inner h3 {
+    text-align: center;
+    position: relative;
+    color: white;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+    font-family: 'Airborne', sans-serif;
+}
+
+.form-inner label {
+   display: block;
+   padding-left: 15px;
+   color: rgba(255, 255, 255, .8);
+   text-transform: uppercase;
+   font-size: 14px;
+}
+
+.form-inner input {
+   display: block;
+   height: 45px;
+   width: 92%;
+   padding-left: 4%;
+   padding-right: 4%;
+   margin: 5px 0 25px;
+   border-width: 0;
+   line-height: 40px;
+   border-radius: 20px;
+   color: rgba(51,32,14, 0.6);
+   background: rgba(255, 255, 255, .4);
+   font-size: 14px;
+   text-transform: none;
+}
+
+input[type="date"] {
+    color: rgba(51,32,14, 0.6);
+}
+
+.form-inner input[type="date"] {
+    color: rgba(51,32,14, 0.6);
+}
+
+.form-inner input[type="submit"] {
+    margin-top: 40px;
+    background: rgba(51,32,14,0.5);
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+}
+
+
+.form-inner-2 button{
+    margin-top: 45px;
+    background: rgba(51,32,14,0.5);
+    display: block;
+    height: 45px;
+    width: 92%;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 14px;
+}
+
+button a, a:visited{
+    text-decoration: none;
+    color: white;
+}
+
+
+/*
+
+RIGHT-AREA
+
+*/
+
+
+.right-area {
+    position: absolute;
+    right: 0%;
+    height: 100%;
+    width: 25%;
+}
+
+
+.button-main {
+    position: absolute;
+    top: 50%;
+    margin-top: -0.5em;
+    left: 140%;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: rgba(51, 32, 14, 0.6);
+    display: inline-block;
+}
+
+.button-search {
+    position: absolute;
+    top: 60%;
+    margin-top: -0.5em;
+    left: 120%;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: rgba(51, 32, 14, 0.6);
+    display: inline-block;
+}
+
+.button-search-2 {
+    position: absolute;
+    top: 60%;
+    margin-top: -0.5em;
+    left: 120%;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: rgba(51, 32, 14, 0.6);
+    display: inline-block;
+}
+
+.button-search-2 span {
+    left: 70px;
+}
+
+button a, a:visited {
+    text-decoration: none;
+    color: rgba(51, 32, 14, 0.6);
+}
+
+button span {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    max-width: 0;
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 2px;
+    line-height: 1;
+    font-family: 'Airborne', sans-serif;
+    top: 22px;
+    left: 40px;
+    transition-delay: 0.5s;
+    transition: 2s;
+}
+
+button:hover span {
+    max-width: 280px;
+    opacity: 1;
+    margin-right: 35px;
+}
+
+
+/*
+
+ADD_OR_FOUND
+
+*/
+
+.add_or_found {
+    position: relative;
+    margin-top: 10px;
+}
+
+.button-2 {
+    position: relative;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: rgba(221, 221, 222);
+    display: block;
+    margin: 50px 0px;
+    left: 30%;
+    margin-left: -0.5em;
+}
+
+.button-2 a i {
+    color: white;
+    font-size: 40px;
+}
+
+.button-2 a span {
+    left: 60px;
+    color: white;
+}
+
+
+/*
+
+PATIENT
+
+*/
+
+
+.patient_button {
+    margin-top: 20px;
+    display: block;
+    height: 45px;
+    width: 92%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 20px;
+    color: rgba(51,32,14, 0.6);
+    background: rgba(255, 255, 255, .2);
+    font-size: 14px;
+}
+
+.patient_button_with_info {
+    margin-top: 3px;
+    margin-bottom: 25px;
+    display: block;
+    height: 45px;
+    width: 92%;
+    padding-left: 4%;
+    padding-right: 4%;
+    border-width: 0;
+    line-height: 40px;
+    border-radius: 20px;
+    color: rgba(51,32,14, 0.6);
+    background: rgba(255, 255, 255, .2);
+    font-size: 14px;
+}
+
+.button-4 {
+    position: relative;
+    font-size: 40px;
+    background: none;
+    border: none;
+    color: rgba(221, 221, 222);
+    display: block;
+    margin: 40px 0px 0px 0px;
+    left: 50%;
+    margin-left: -0.5em;
+}
+
+.button-4 a i {
+    color: white;
+}
+
+.button-4 a span {
+    top: 14px;
+    left: 50px;
+    color: white;
+}

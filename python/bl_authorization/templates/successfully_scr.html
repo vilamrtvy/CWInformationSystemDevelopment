@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/auth_base.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.1/css/all.css">
+    <title>Successfully</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav><ul>
+                <li><a class="button-7" href="/patient">
+                    <span>НОВЫЙ ПАЦИЕНТ</span>
+                    <i class="fas fa-hospital-user"></i>
+                </a></li>
+                <li><a class="button-7" href="/requests">
+                    <span>ОТЧЕТНОСТЬ</span>
+                    <i class="fas fa-file-medical-alt"></i>
+                </a></li>
+                <li><a class="button-7" href="/">
+                    <span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span>
+                    <i class="fas fa-home"></i>
+                </a></li>
+            </ul></nav>
+        </div>
+
+        <form class="transparent">
+            <div class="form-inner">
+                <h3>УСПЕШНЫЙ ВХОД</h3>
+                <div class="image" style="background-image: {{ image }};">
+                </div>
+                <h3> {{ name }} </h3>
+                {% for i in range(0, length) %}
+                <h4> {{ position[i] }} </h4>
+                {% endfor %}
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="/static/css/patient/infocard.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <title>CARD OF PATIENT</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav>
+                <ul>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/notice">
+                        <span>НАЗАД</span>
+                        <i class="fas fa-undo"></i>
+                    </a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/">
+                        <span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span>
+                        <i class="fas fa-home"></i>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="profile">
+            <div class="area1">
+                <div class="image"></div>
+            </div>
+            <div class="area2">
+                <table>
+                    <caption>ИНФОРМАЦИЯ</caption>
+                    {% for i in range(0,4) %}
+                    <tr>
+                        <th> {{ title_list[i] }} </th>
+                        <td style="height:30px;"> {{ patient[i] }} </td>
+                    </tr>
+                    {% endfor %}
+                </table>
+
+                <div class="area4">
+                    <div class="location2">
+                        <button class="button-main">
+                            <a href="/notice/adding">
+                                <span>Редактировать</span>
+                                <i class="fas fa-user-edit"></i>
+                            </a>
+                        </button>
+                    </div>
+
+                    <div class="location3">
+                        <button class="button-main">
+                            <a href="/notice/accept">
+                                <i class="fas fa-user-plus"></i>
+                                <span>Подтвердить</span>
+                            </a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="history">
+            <table>
+                <caption>ИСТОРИЯ БОЛЕЗНЕЙ</caption>
+                <tr>
+                {% for key in history_list %}
+                    <th> {{ key }} </th>
+                {% endfor %}
+                </tr>
+                <tr>
+                    {% for i in range(0, 6) %}
+                    <td>
+                        {{ history[i] }}
+                    </td>
+                    {% endfor %}
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

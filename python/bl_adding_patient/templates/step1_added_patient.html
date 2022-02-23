@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/patient/main.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.1/css/all.css">
+    <title>ADDED</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav>
+                <ul>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/patient/add">
+                        <span>НАЗАД</span>
+                        <i class="fas fa-undo"></i>
+                    </a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/patient/save_cash">
+                        <span>ВЫЙТИ И СОХРАНИТЬ</span>
+                        <i class="far fa-save"></i>
+                    </a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/patient/delete_cash">
+                        <span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span>
+                        <i class="fas fa-home"></i>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-2">
+            <form class="transparent">
+                <div class="form-inner">
+                    <h3 style="margin-bottom: 40px;">ИНФОРМАЦИЯ О ПАЦИЕНТЕ</h3>
+
+                    {% for i in range(0, length) %}
+                        <label>{{ label_list[i] }}</label>
+
+                        <button class="patient_button_with_info">
+                            {{ info_about_patient[i] }}
+                        </button>
+                    {% endfor %}
+
+                    <button class="button-search-2" type="submit" formmethod="POST">
+                        <span>Далее</span>
+                        <i class="fas fa-user-check"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

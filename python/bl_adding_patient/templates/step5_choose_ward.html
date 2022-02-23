@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/patient/choose.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.1/css/all.css">
+    <title>CHOOSE WARD</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav>
+                <ul>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="{{ url }}">
+                        <span>НАЗАД</span>
+                        <i class="fas fa-undo"></i>
+                    </a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/patient/save_cash">
+                        <span>ВЫЙТИ И СОХРАНИТЬ</span>
+                        <i class="far fa-save"></i>
+                    </a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/patient/delete_cash">
+                        <span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span>
+                        <i class="fas fa-home"></i>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="profile">
+            <div class="variable">
+                <table>
+                    <caption>ВЫБЕРИТЕ ПАЛАТУ</caption>
+                    <form action="" method="POST">
+                        {% for ward in wards %}
+                        <tr>
+                            <td><button name="number_ward" value="{{ ward[ward_id] }}" type="submit">
+                                Палата № {{ ward[ward_number] }}
+                                <h1> {{ ward[ward_cat] }} </h1>
+                                <h1> Количество свободных мест: {{ ward[ward_places] }} </h1>
+                            </button></td>
+                        </tr>
+                        {% endfor %}
+                    </form>
+                </table>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

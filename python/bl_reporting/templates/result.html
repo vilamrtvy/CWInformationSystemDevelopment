@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+    <link rel="stylesheet" href="/static/css/profile/result.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <title>RESULT</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav>
+                <ul>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/requests"><span>ВЕРНУТЬСЯ В МЕНЮ ЗАПРОСОВ</span><i class="fas fa-clipboard"></i></a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/"><span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span><i class="fas fa-home"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="profile">
+            <table>
+                {% for i in range(0, length-1) %}
+                    <caption style="margin-bottom: 8px;">
+                        {{ title[i] }}
+                    </caption>
+                {% endfor %}
+                <caption style="margin-bottom: 30px;">
+                    {{ title[length-1] }}
+                </caption>
+                <tr>
+                    {% for key in keylist %}
+                        <th> {{ key }} </th>
+                    {% endfor %}
+                </tr>
+                {% for i in list %}
+                    <tr>
+                        {% for key in res_keys %}
+                            <td> {{ i[key] }} </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </table>
+        </div>
+    </div>
+</body>
+</html>

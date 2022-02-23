@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/auth_base.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.1/css/all.css">
+    <title>Successfully</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav><ul>
+                <li><a class="button-7" href="/"><span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span><i class="fas fa-home"></i></a></li>
+            </ul></nav>
+        </div>
+
+        <form class="transparent">
+            <div class="form-inner">
+                <div class="form-inner-2">
+                    <h3>ВЫ УЖЕ АВТОРИЗОВАНЫ</h3>
+                    <h3>КАК {{ name }}</h3>
+                    <br>
+                    <br>
+                    <h3>ХОТИТЕ АВТОРИЗОВАТЬСЯ</h3>
+                    <h3>С ДРУГОГО АККАУНТА?</h3>
+                    <button style="margin-top: 25px;"><a href="/auth/reauth">Подтвердить</a></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

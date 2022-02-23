@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/patient/choose.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.1/css/all.css">
+    <title>CHOOSE WARD</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav>
+                <ul>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/patient/save_cash">
+                        <span>ВЫЙТИ И СОХРАНИТЬ</span>
+                        <i class="far fa-save"></i>
+                    </a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/patient/delete_cash">
+                        <span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span>
+                        <i class="fas fa-home"></i>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="profile">
+            <div class="variable">
+                <table>
+                    <caption style="margin-bottom: 30px;">ВЫБЕРИТЕ ВРАЧА</caption>
+                    <form action="" method="POST">
+                        {% for i in range(0, length) %}
+                        <tr>
+                            <td><button name="doctor" value="{{ list_of_doctors[i][doc_id] }}" type="submit">
+                                Врач: {{ list_of_doctors[i][doc_name] }}
+                            </button></td>
+                        </tr>
+                        {% endfor %}
+                    </form>
+                </table>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

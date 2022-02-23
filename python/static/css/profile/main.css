@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Airborne', sans-serif;
+}
+
+.container{
+    background: url(/static/image/fon1.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    box-sizing: border-box;
+}
+
+/*
+
+НАВБАР
+
+*/
+
+.logo{
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+    top: 50%;
+    position: relative;
+    margin-top: -0.5em;
+    margin-left: 4%;
+    font-family: 'Airborne', sans-serif;
+}
+
+.navbar{
+    height: 8%;
+    align-items: centre;
+    background: rgba(165, 166, 168, 0.9);
+    padding-right: 4%;
+    display: flex;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+    font-size: 20px;
+    top: 50%;
+    position: relative;
+    margin-top: -0.5em;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 60px;
+}
+
+nav ul li a{
+    list-style: none;
+    text-decoration: none;
+    color: rgba(51, 32, 14, 0.6);
+}
+
+.button-7 {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.button-7 span {
+    display: block;
+    overflow: hidden;
+    max-width: 0;
+    opacity: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    letter-spacing: 1px;
+    line-height: 1;
+    transition: 2s ease;
+    font-family: 'Airborne', sans-serif;
+}
+
+.button-7:after {
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.button-7:hover span {
+    max-width: 280px;
+    opacity: 1;
+    margin-right: 6px;
+}
+
+
+/*
+
+ПРОФИЛЬ
+
+*/
+
+.profile {
+    height: 68%;
+    position: relative;
+    padding-top: 40px;
+    width: 100%;
+    display: flex;
+}
+
+table {
+    font-size: 14px;
+    border: none;
+    border-spacing: 50px 10px;
+    border-collapse: separate;
+    text-align: center;
+    position: relative;
+    cursor: default;
+    background: none;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+th {
+    font-weight: normal;
+    color: rgba(51, 32, 14, 0.5);
+    font-weight: 550;
+    border-bottom: none;
+    width: 250px;
+    padding-bottom: 5px;
+}
+
+td {
+    border-bottom: none;
+    color: rgba(51,32,14, 0.8);
+    padding: 7px 0px;
+    transition: .3s linear;
+    cursor: default;
+    height: 20px;
+    width: 250px;
+    font-weight: 505;
+}
+
+caption {
+    caption-side: top;
+    position: relative;
+    color: rgba(51, 32, 14, 0.6);
+    font-weight: 600;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+
+/*
+
+TRANSPARENT
+
+*/
+
+
+.transparent {
+    position: relative;
+    width: 380px;
+    padding: 40px 60px;
+    border: 1px solid rgba(165, 166, 168, 0.6);
+    background: rgba(165, 166, 168, 0.5);
+    border-radius: 35px;
+    margin-top: 8%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 0%)
+}
+
+.form-inner {
+    position: relative;
+}
+
+.form-inner h3 {
+    text-align: center;
+    position: relative;
+    color: white;
+    font-weight: 300;
+    font-size: 26px;
+    text-transform: uppercase;
+}
+
+.form-inner label {
+   display: block;
+   padding-left: 15px;
+   color: rgba(255, 255, 255, .6);
+   text-transform: uppercase;
+   font-size: 14px;
+}
+
+.form-inner input {
+   display: block;
+   height: 45px;
+   width: 92%;
+   padding-left: 4%;
+   padding-right: 4%;
+   margin: 10px 0 15px;
+   border-width: 0;
+   line-height: 40px;
+   border-radius: 20px;
+   color: white;
+   background: rgba(255, 255, 255, .2);
+   font-size: 14px;
+}
+
+.form-inner input[type="submit"] {
+    margin-top: 40px;
+    background: rgba(51,32,14,0.5);
+    padding-left: 0%;
+    padding-right: 0%;
+    width: 100%;
+}
+
+
+/*
+
+КНОПКИ
+
+*/
+
+
+button {
+    color: rgba(51, 32, 14, 0.6);
+    font-weight: 520;
+    font-size: 16px;
+    border-radius: 10px;
+    background: rgba(165, 166, 168, 0.4);
+    height: 65px;
+    width: 750px;
+    cursor: pointer;
+    display: block;
+    transition: 1s;
+}
+
+button a, a:visited{
+    text-decoration: none;
+    color: rgba(51, 32, 14, 0.6);
+    transition: 1.5s;
+}
+
+button:hover {
+    background: rgba(255, 231, 240, 0.2);
+    transition: 1.5s;
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+.ward-button {
+    width: 300px;
+    padding: 20px;
+    height: auto;
+}
+

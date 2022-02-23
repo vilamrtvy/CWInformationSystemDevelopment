@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="/static/css/request/patients.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <title>PATIENTS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav>
+                <ul>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/cards/go-home">
+                        <span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span>
+                        <i class="fas fa-home"></i>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <table style="margin-top: 20px;">
+            <caption>ВАШИ ПАЦИЕНТЫ</caption>
+            <tr>
+                {% for key in keylist %}
+                    <th> {{ key }} </th>
+                {% endfor %}
+            </tr>
+            {% for i in list %}
+                <tr>
+                    {% for key in res_keys %}
+                    <td>
+                        {{ i[key] }}
+                    </td>
+                    {% endfor %}
+                    <td class="nav">
+                        <form action="" method="post">
+                            <input type="hidden"  name="patient" value="{{ i['pat_id'] }}">
+                            <button class="book"><i class='fas fa-book-medical'></i></button>
+                        </form>
+                    </td>
+                </tr>
+            {% endfor %}
+        </table>
+    </div>
+</body>
+</html>

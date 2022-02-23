@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/patient/main.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.1/css/all.css">
+    <title>CONFIRMATION</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav>
+                <ul>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/cards/about-patient">
+                        <span>НАЗАД</span>
+                        <i class="fas fa-undo"></i>
+                    </a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/cards/go-home">
+                        <span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span>
+                        <i class="fas fa-home"></i>
+                    </a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="container-2">
+            <div class="transparent">
+                <div class="form-inner">
+                    <h3>
+                        ПОДТВЕРДИТЕ ВЫПИСКУ
+                        <br>
+                        ПАЦИЕНТА
+                        <br>
+                        {{ name }}
+                    </h3>
+
+                    <button class="patient_button">
+                        <a href="/cards/discharge-patient">
+                            ПОДТВЕРДИТЬ
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

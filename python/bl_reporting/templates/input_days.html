@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/profile/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <title>REQUEST WITH NUMBERS</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav>
+                <ul>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/requests"><span>НАЗАД</span><i class="fas fa-undo"></i></a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/"><span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span><i class="fas fa-home"></i></a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <form class="transparent">
+            <div class="form-inner">
+                <h3>{{ title }}</h3>
+
+                <label style="padding-top: 40px;" for="days">{{ prompt }}</label>
+                <input id="days" name="days" type="text">
+
+                <input type="submit" formmethod="POST" name="ОТПРАВИТЬ">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

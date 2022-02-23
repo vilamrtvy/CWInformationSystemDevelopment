@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/css/patient/choose.css">
+    <link href="http://fonts.cdnfonts.com/css/airborne" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <title>ADD DISEASE</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">EMSEY HOSPITAL</div>
+
+            <nav>
+                <ul>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/notice/adding">
+                        <span>НАЗАД</span>
+                        <i class="fas fa-undo"></i>
+                    </a></li>
+                    <li><a style="color: rgba(221, 221, 222);" class="button-7" href="/">
+                        <span>ВЕРНУТЬСЯ В ГЛАВНОЕ МЕНЮ</span>
+                        <i class="fas fa-home"></i>
+                    </a></li></ul>
+            </nav>
+        </div>
+
+        <div class="profile">
+            <div class="variable">
+                <table>
+                    <caption>ВЫБЕРИТЕ ДИАГНОЗ</caption>
+                    <form action="" method="POST">
+                        {% for i in range(0, length) %}
+                        <tr>
+                            {% for j in range (i*3, i*3+3) %}
+                            <td>
+                                <button name="disease" value="{{ list_of_diseases[j] }}" type="submit">
+                                    {{ list_of_diseases[j] }}
+                                </button>
+                            </td>
+                            {% endfor %}
+                        </tr>
+                        {% endfor %}
+                    </form>
+                </table>
+            </div>
+
+            <div class="input_window">
+                <h3>ИЛИ ВВЕДИТЕ СВОЙ</h3>
+
+                <form class="input_form">
+                    <label for="days">Введите диагноз</label>
+                    <input id="days" name="disease" type="text">
+
+                    <input type="submit" formmethod="POST" name="ОТПРАВИТЬ">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
