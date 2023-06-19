@@ -8,7 +8,7 @@ ____
 **Download** the project
 
 
-**Install the database** from folder "Database" and **import** it in Workbench app```
+**Install the database** from folder "Database" and **import** it in Workbench app
 
 
 **Add  ```venv```  folder** if Python project
