@@ -1,4 +1,4 @@
-# Course_Work_ISD
+# COURSE WORK - INFORMATION SYSTEM DEVELOPMENT
 
 Course work on the topic "Development of a hospital information system".
 
